@@ -17,3 +17,8 @@ instituicaoId int not null,
 PRIMARY KEY(idAluno),
 FOREIGN KEY(instituicaoId) REFERENCES instituicao(idInstituicao)
 );
+
+-- Atualizar uma coluna com base em uma tabela 
+
+ALTER TABLE alunos
+DROP COLUMN cursoAluno;
